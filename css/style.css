@@ -1,0 +1,213 @@
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+/*In order for the width of the picture/div/section to be 100% width I had to add margin: 0; padding: 0; otherwise the picture would be close to 100% width but there would be small gaps on either saide.*/
+}
+
+#top-nav {
+    /*position: inherit;*/
+   top: 0px;
+    background-color: white;
+    width: 100%;
+    height: 290px;
+    
+}
+
+#top-nav a {
+    position: relative;
+    left: 950px;
+    top: 120px;
+    display: inline-block;
+   text-decoration: none; 
+    padding-top: 10px;
+    margin: 20px;
+    color: black;
+    font-weight: bolder;
+    font-family: sans-serif;
+    /*background-color:*/ 
+}
+
+#top-nav a:hover {
+    text-decoration: none;
+    color: #16AB88;
+}
+
+  /* I have made it so when the user clicks on a link and they go the specific page they link they clicked on will be activated(will be pink) hovering over it won't change the color either as the hovering color is also pink. I gave each body for different pages id's i.e page1, page2 etc... and then I gave each link a class i.e home, about etc...*/
+
+#page1 .home, #page2 .about {
+    color: #FB416F;
+}
+
+#page1 .home:hover, #page2 .about:hover {
+    color: #FB416F;
+}
+
+#logo {
+    position: absolute;
+    left: 450px;
+    top: 95px;
+    margin-bottom: 280px;
+    margin-left: 49px;
+}
+
+
+#container {
+    background: url("/img/runner4.jpg")no-repeat center center; background-size:cover;
+    width: 100%;
+    height: 1000px;
+    border-top-style:solid;
+    border-color: black;
+    border-top-width: 2px;
+}
+
+#runners {
+    position: relative;
+    top: 490px;
+    left: 500px;
+}
+
+#container-text {
+    position: relative;
+    top: -490px;
+    text-align: center;
+    font-size: 500%;
+    font-weight: bolder;
+    font-family: sans-serif;
+    color: #FB416F;
+    
+}
+
+#container-text2 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 21px;
+    font-family: sans-serif;
+    color: #FB416F;
+    border-color: #FB416F;
+    border-width: 5px;
+    border-style: solid;
+    padding: 5px;
+    width: 200px;
+    position: relative;
+    top: -500px;
+    left: 790px;
+}
+
+#container-text3 {
+      text-align: center;
+    font-weight: bolder;
+    font-size: 21px;
+    font-family: sans-serif;
+    color: #FB416F;
+    border-color: #FB416F;
+    border-width: 5px;
+    border-style: solid;
+    padding: 5px;
+    width: 100px;
+    position: relative;
+    top: -565px;
+    left: 1005px;
+}
+
+#pink-box {
+    width: 100%;
+    height: 480px;
+    background-color: #FB416F;
+    position: relative;
+    top: -40px;
+}
+
+#winning {
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bolder;
+    font-size: 40px;
+    position: relative;
+    top: 55px;
+}
+
+#white-bar {
+    width: 80px;
+    height: 7px;
+    background-color: white;
+    position: relative;
+    top: 50px;
+    left: 910px;
+}
+
+#winning-subtext {
+    color: white;
+    text-align: center;
+    font-size: 27px;
+    position: relative;
+    top: 55px;
+}
+
+#white-bar2 {
+      width: 80px;
+    height: 7px;
+    background-color: white;
+    position: relative;
+    top: 190px;
+    left: 910px;
+}
+
+#read-more {
+    text-align: center;
+    position: relative;
+    top: 120px;
+    left: 840px;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    border-color: white;
+    border-style: solid;
+    border-width: 5px;
+    padding: 10px;
+    width: 180px;
+}
+
+footer {
+    width: 100%;
+    height: 245px;
+    background-color: #11070B;
+    /*position: relative; Hvaing position relative left a white gap at the bottom/under the footer and removing it fixed that particular issue.*/
+    top: -56px;
+    overflow: hidden;
+    margin-top: -40px;
+    
+}
+
+#footer-text {
+   color: white;
+    position: relative;
+    top: 40px;
+    left: 500px;
+    font-size: 18px;
+}
+
+.social {
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+    left: 1300px;
+    top: -5px;
+    display: inline-block;    
+}
+
+.social li {
+    display: inline;
+}
+
+.social i {
+    font-size: 200%;
+    margin: -40px;
+    padding: 5% 5% 5% 4%;
+    color: white;
+}
+
+.social i:hover {
+    color: #FB416F;
+}
