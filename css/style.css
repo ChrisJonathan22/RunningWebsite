@@ -2,12 +2,10 @@ body {
     background-color: white;
     margin: 0;
     padding: 0;
-/*In order for the width of the picture/div/section to be 100% width I had to add margin: 0; padding: 0; otherwise the picture would be close to 100% width but there would be small gaps on either saide.*/
 }
 
 #top-nav {
-    /*position: inherit;*/
-   top: 0px;
+    top: 0px;
     background-color: white;
     width: 100%;
     height: 290px;
@@ -25,7 +23,6 @@ body {
     color: black;
     font-weight: bolder;
     font-family: sans-serif;
-    /*background-color:*/ 
 }
 
 #top-nav a:hover {
@@ -33,7 +30,6 @@ body {
     color: #16AB88;
 }
 
-  /* I have made it so when the user clicks on a link and they go the specific page they link they clicked on will be activated(will be pink) hovering over it won't change the color either as the hovering color is also pink. I gave each body for different pages id's i.e page1, page2 etc... and then I gave each link a class i.e home, about etc...*/
 
 #page1 .home, #page2 .about {
     color: #FB416F;
