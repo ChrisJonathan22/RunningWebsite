@@ -4,20 +4,30 @@ body {
     padding: 0;
 }
 
+header {
+    height: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 20px;
+    margin: 0 auto;
+
+}
+
 #top-nav {
     top: 0px;
     background-color: white;
-    width: 100%;
-    height: 290px;
-    
+    float: right;
 }
 
 #top-nav a {
-    position: relative;
-    left: 950px;
-    top: 120px;
     display: inline-block;
-   text-decoration: none; 
+    text-decoration: none; 
     padding-top: 10px;
     margin: 20px;
     color: black;
@@ -31,6 +41,7 @@ body {
 }
 
 
+
 #page1 .home, #page2 .about {
     color: #FB416F;
 }
@@ -38,15 +49,6 @@ body {
 #page1 .home:hover, #page2 .about:hover {
     color: #FB416F;
 }
-
-#logo {
-    position: absolute;
-    left: 450px;
-    top: 95px;
-    margin-bottom: 280px;
-    margin-left: 49px;
-}
-
 
 #container {
     background: url("/img/runner4.jpg")no-repeat center center; background-size:cover;
