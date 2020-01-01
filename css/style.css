@@ -53,63 +53,63 @@ header {
 #container {
     background: url("/img/runner4.jpg")no-repeat center center; background-size:cover;
     width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-bottom: 70px;
     height: 1000px;
     border-top-style:solid;
     border-color: black;
     border-top-width: 2px;
-}
-
-#runners {
-    position: relative;
-    top: 490px;
-    left: 500px;
-}
-
-#container-text {
-    position: relative;
-    top: -490px;
     text-align: center;
+}
+
+#container_title {
     font-size: 500%;
     font-weight: bolder;
     font-family: sans-serif;
-    color: #FB416F;
-    
+    color: #FB416F;   
 }
 
-#container-text2 {
+.container_input {
     text-align: center;
     font-weight: bolder;
     font-size: 21px;
     font-family: sans-serif;
     color: #FB416F;
+    background-color: transparent;
     border-color: #FB416F;
     border-width: 5px;
     border-style: solid;
     padding: 5px;
-    width: 200px;
-    position: relative;
-    top: -500px;
-    left: 790px;
 }
 
-#container-text3 {
-      text-align: center;
-    font-weight: bolder;
-    font-size: 21px;
-    font-family: sans-serif;
+#email_input {
+    width: 200px;
+    background-color: transparent !important;
+}
+
+#email_input::placeholder {
     color: #FB416F;
-    border-color: #FB416F;
-    border-width: 5px;
-    border-style: solid;
-    padding: 5px;
-    width: 100px;
-    position: relative;
-    top: -565px;
-    left: 1005px;
+}
+
+.container_input#button {
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.container_input#button:hover {
+    background-color: #FB416F;
+    color: #FFFFFF;
+}
+
+#runners {
+    padding-top: 50px;
 }
 
 #pink-box {
     width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
     height: 480px;
     background-color: #FB416F;
     position: relative;
@@ -144,7 +144,7 @@ header {
 }
 
 #white-bar2 {
-      width: 80px;
+    width: 80px;
     height: 7px;
     background-color: white;
     position: relative;
@@ -179,7 +179,7 @@ footer {
 }
 
 #footer-text {
-   color: white;
+    color: white;
     position: relative;
     top: 40px;
     left: 500px;
@@ -220,12 +220,10 @@ body {
     }
     
 #top-nav {
-        position: ;
-        top: -260px;
-        width: 100%;
-        height: 100px;
-        background: white;
-    
+    top: -260px;
+    width: 100%;
+    height: 100px;
+    background: white;
     }
     
 #top-nav a {
@@ -415,10 +413,6 @@ footer {
 .social i:hover {
     color: #FB416F;
 }
-
-
-
-
 }
 
 
