@@ -37,16 +37,6 @@ header {
 
 #top-nav a:hover {
     text-decoration: none;
-    color: #16AB88;
-}
-
-
-
-#page1 .home, #page2 .about {
-    color: #FB416F;
-}
-
-#page1 .home:hover, #page2 .about:hover {
     color: #FB416F;
 }
 
@@ -56,7 +46,7 @@ header {
     max-width: 1440px;
     margin: 0 auto;
     padding-bottom: 70px;
-    height: 1000px;
+    height: auto;
     border-top-style:solid;
     border-color: black;
     border-top-width: 2px;
@@ -64,7 +54,7 @@ header {
 }
 
 #container_title {
-    font-size: 500%;
+    font-size: 5em;
     font-weight: bolder;
     font-family: sans-serif;
     color: #FB416F;   
@@ -126,13 +116,17 @@ header {
     top: 55px;
 }
 
-#white-bar {
+.white_bar {
     width: 80px;
     height: 7px;
     background-color: white;
     position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#white-bar {
     top: 50px;
-    left: 910px;
 }
 
 #winning-subtext {
@@ -144,19 +138,15 @@ header {
 }
 
 #white-bar2 {
-    width: 80px;
-    height: 7px;
-    background-color: white;
-    position: relative;
-    top: 190px;
-    left: 910px;
+    top: 67px;
 }
 
 #read-more {
     text-align: center;
     position: relative;
     top: 120px;
-    left: 840px;
+    left: 50%;
+    transform: translate(-50%);
     color: white;
     font-weight: bolder;
     font-size: 20px;
@@ -165,34 +155,31 @@ header {
     border-width: 5px;
     padding: 10px;
     width: 180px;
+    cursor: pointer;
+}
+
+#read-more a {
+    text-decoration: none;
+    color: white;
 }
 
 footer {
-    width: 100%;
-    height: 245px;
+    height: 165px;
     background-color: #11070B;
-    /*position: relative; Having position relative left a white gap at the bottom/under the footer and removing it fixed that particular issue.*/
-    top: -56px;
     overflow: hidden;
     margin-top: -40px;
-    
 }
 
 #footer-text {
     color: white;
-    position: relative;
-    top: 40px;
-    left: 500px;
+    text-align: center;
     font-size: 18px;
+    margin-top: 40px;
 }
 
 .social {
     list-style-type: none;
     text-align: center;
-    position: relative;
-    left: 1300px;
-    top: -5px;
-    display: inline-block;    
 }
 
 .social li {
@@ -212,207 +199,49 @@ footer {
 
 /*--START MEDIA QUERIES--*/
 
-@media only screen and (min-width: 150px) and (max-width: 768px) {
-    
-body {
-        overflow-x: hidden;
+@media screen and (max-width: 480px) {
+    #container_title {
+        font-size: 3em !important;
+    }
+
+    #pink-box {
+        padding-bottom: 50px;
+    }
+
+    #winning-subtext {
+        padding: 0 10px;
+    }
+
+    .social {
+        margin-top: 30px;
+    }
+
+    .social i {
+        margin: 0;
+    }
+
+    #footer-text {
+        margin-top: 40px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #container_title {
+        font-size: 4em;
+    }
+
+    .social i {
+        margin: 0;
+        font-size: 2em;
+    }
+
+    #footer-text {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 985px) {
+    #runners {
         width: 100%;
     }
-    
-#top-nav {
-    top: -260px;
-    width: 100%;
-    height: 100px;
-    background: white;
-    }
-    
-#top-nav a {
-    position: relative;
-    left: 43px;
-    top: 40px;
-    display: inline-block;
-   text-decoration: none; 
-    padding-top: 10px;
-    margin: 1px;
-    color: black;
-    font-weight: bolder;
-    font-family: sans-serif;
-        font-size: 9px;
-    /*background-color:*/ 
 }
-
-#top-nav a:hover {
-    text-decoration: none;
-    color: #16AB88;
-    
-}
-    
-    
-#logo {
-        position: absolute;
-        left: -45px;
-        top: 5px;
-        width: 15%;
-        height: 20px;
-    }
-    
-#container {
-    width: 100%;
-    height: 200px;
-}
-    
-  #runners {
-    position: relative;
-    top: 110px;
-    left: 80px;
-      width: 50%;
-      height: 50px;
-}
-
-#container-text {
-    position: relative;
-    top: -65px;
-    text-align: center;
-    font-size: 100%;
-    font-weight: bolder;
-    font-family: sans-serif;
-    color: #FB416F;
-    
-}
-
-#container-text2 {
-    text-align: center;
-    font-weight: bolder;
-    font-size: 50%;
-    font-family: sans-serif;
-    color: #FB416F;
-    border-color: #FB416F;
-    border-width: 2px;
-    border-style: solid;
-    padding: 5px;
-    width: 60px;
-    position: relative;
-    top: -65px;
-    left: 60px;
-}
-
-#container-text3 {
-     text-align: center;
-    font-weight: bolder;
-    font-size: 50%;
-    font-family: sans-serif;
-    color: #FB416F;
-    border-color: #FB416F;
-    border-width: 2px;
-    border-style: solid;
-    padding: 5px;
-    width: 60px;
-    position: relative;
-    top: -96px;
-    left: 130px;
-}
-  
-#pink-box {
-    width: 100%;
-    height: 100px;
-    background-color: #FB416F;
-    position: relative;
-    top: -40px;
-}
-
-#winning {
-    text-align: center;
-    font-family: sans-serif;
-    color: white;
-    font-weight: bolder;
-    font-size: 7px;
-    position: relative;
-    top: 10px;
-}
-
-#white-bar {
-    width: 5%;
-    height: 3px;
-    background-color: white;
-    position: relative;
-    top: 5px;
-    left: 121px;
-}
-
-#winning-subtext {
-    color: white;
-    text-align: center;
-    font-size: 8px;
-    position: relative;
-    top: 0px;
-}
-
-#white-bar2 {
-   width: 5%;
-    height: 3px;
-    background-color: white;
-    position: relative;
-    top: 35px;
-    left: 121px;
-}
-
-#read-more {
-    text-align: center;
-    position: relative;
-    top: 10px;
-    left: 100px;
-    color: white;
-    font-weight: bolder;
-    font-size: 5px;
-    border-color: white;
-    border-style: solid;
-    border-width: 2px;
-    padding: 5px;
-    width: 40px;
-}
-
-footer {
-    width: 100%;
-    height: 80px;
-    background-color: #11070B;
-    /*position: relative; Having position relative left a white gap at the bottom/under the footer and removing it fixed that particular issue.*/
-    top: -56px;
-    overflow: hidden;
-    margin-top: -40px;
-    
-}
-
-#footer-text {
-   color: white;
-    position: relative;
-    top: 10px;
-    left: 10px;
-    font-size: 8px;
-}
-
-.social {
-    list-style-type: none;
-    text-align: center;
-    position: relative;
-    left: 170px;
-    top: -30px;
-    display: inline-block;    
-}
-
-.social li {
-    display: inline;
-}
-
-.social i {
-    font-size: 10px;
-    margin: -15px;
-    padding: 5% 5% 5% 4%;
-    color: white;
-}
-
-.social i:hover {
-    color: #FB416F;
-}
-}
-
-
